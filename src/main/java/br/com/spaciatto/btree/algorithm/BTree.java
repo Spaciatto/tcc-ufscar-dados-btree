@@ -71,7 +71,7 @@ public class BTree {
 
     public void traverseFormated() {
         if (this.root != null) {
-            this.dis(this.root, 1);
+            this.display(this.root, 1);
         }
     }
 
@@ -99,19 +99,19 @@ public class BTree {
         return s;
     }
 
-    private void dis(BTreeNode node, int depth) {
+    private void display(BTreeNode node, int depth) {
         if (node != null) {
 //            int children = node.getChildren().length;
             for (int i = node.getNumberKeys() ; i > 0; i--) {
                 if (!node.isLeaf()) {
-                    dis(node.getChildren()[i], depth + 4);
+                    display(node.getChildren()[i], depth + 4);
                 }
                 if (i -1 < node.getNumberKeys()) {
                     for (int j = 1; j <= depth; j++) System.out.print(" ");
                     System.out.println(node.getKeys()[i-1]);
                 }
             }
-            dis(node.getChildren()[0], depth + 4);
+            display(node.getChildren()[0], depth + 4);
         }
     }
 }
