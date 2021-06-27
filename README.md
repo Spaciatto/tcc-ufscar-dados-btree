@@ -14,6 +14,6 @@ Linguagem: Java Zulu-11
 ###### 1 - Abrir uma janela de linha de comando (Ex: CMD do Windows)
 ###### 2 - Navegar até a pasta **tcc-ufscar-dados-btree**
 ###### 3 - Executar o comando:
-####**_java -cp BTree.jar br.com.spaciatto.btree.BTreeApp_**
+#### java -cp BTree.jar br.com.spaciatto.btree.BTreeApp
 
 ### Obs: O runtime Java 11 deve estar instalado no computador
